@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weinviertel Wine Country | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="logo">🍷 Weinviertel DAC</div>
+<nav>
+  <a href="index.html" class="active">Home</a>
+  <a href="winemakers.html">Meet the Winemakers</a>
+  <a href="kellergassen.html">Cellar Lanes</a>
+</nav>
+  </header>
+
+  <!-- REQUIREMENT A: Welcome Message container (JS populates this ONLY on index page) -->
+  <div id="welcome-banner" class="welcome-banner"></div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover the Austrian Weinviertel</h1>
+    <p>Explore Austria's largest wine-growing region, renowned for rolling hills, historic cellar lanes, and the world-famous peppery Grüner Veltliner.</p>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="container">
+    <section class="intro-box">
+      <h2>The Secret of the "Pfefferl"</h2>
+      <p>The Weinviertel (Wine Quarter) is located in northeastern Lower Austria. Why are the wines here so special? The unique combination of cool night breezes and loess soil gives the local Grüner Veltliner a distinct, refreshing white-pepper spice known locally as the <strong>"Pfefferl"</strong>.</p>
+    </section>
+
+    <!-- REQUIREMENT C: Interactive JS Function with User Input -->
+    <section class="interactive-sommelier">
+      <div class="sommelier-card">
+        <h2>🍷 Interactive Weinviertel Sommelier</h2>
+        <p>Not sure which Weinviertel wine style suits your dinner? Try our interactive pairing calculator!</p>
+        
+        <div class="input-group">
+          <label for="userName">Your Name:</label>
+          <input type="text" id="userName" placeholder="e.g., Max">
+        </div>
+
+        <div class="input-group">
+          <label for="foodSelect">What are you eating tonight?</label>
+          <select id="foodSelect">
+            <option value="">-- Choose a dish --</option>
+            <option value="schnitzel">Classic Wiener Schnitzel</option>
+            <option value="cheese">Goat Cheese & Fresh Herbs</option>
+            <option value="beef">Roasted Beef or Lamb</option>
+            <option value="asian">Spicy Thai or Asian Noodles</option>
+          </select>
+        </div>
+
+        <button onclick="recommendWine()" class="btn-primary">Get Wine Recommendation</button>
+
+        <!-- The JS function will print the result inside this box -->
+        <div id="recommendationResult" class="result-box"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- REQUIREMENT B: Footer with ID and Name on ALL pages -->
+  <footer class="site-footer">
+    <p>Student ID: <strong>24-24229077</strong> | Name: <strong>Maximilian Krammer</strong></p>
+    <p>&copy; 2026 Weinviertel Wine Guide. No Template. Built from scratch with HTML, CSS, and JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
