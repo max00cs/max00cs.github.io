@@ -362,3 +362,29 @@ body {
   color: var(--text-dark);
   font-weight: 500;
 }
+/* ==========================================================
+   MOBILE RESPONSIVENESS FIX
+   ========================================================== */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column; /* Stacks the logo and menu vertically */
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 15px; /* Adds breathing room below the logo */
+  }
+
+  .site-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Adds even spacing between the links */
+  }
+
+  .site-header nav a {
+    margin-left: 0; /* Removes the desktop spacing to center perfectly */
+    font-size: 0.95rem;
+  }
+}
