@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const welcomeBanner = document.getElementById("welcome-banner");
   
-  // This check ensures the message only runs on index.html
+  // only runs on index.html
   if (welcomeBanner) {
     const hours = new Date().getHours();
     let greeting = "Welcome";
@@ -31,7 +31,7 @@ function recommendWine() {
     resultBox.style.backgroundColor = "#ffe3e3";
     resultBox.style.border = "1px solid #ff8787";
     resultBox.style.color = "#c92a2a";
-    resultBox.innerHTML = "⚠️ Please enter your name and select a meal so we can recommend a wine!";
+    resultBox.innerHTML = "⚠️ Please enter your name and select a meal so I can recommend a wine!";
     return;
   }
 
